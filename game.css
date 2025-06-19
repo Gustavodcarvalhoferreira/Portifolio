@@ -1,0 +1,168 @@
+body {
+  background-color: #C8A39F;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #310049;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-color: #C8A39F;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #4D3141;
+  height: 100px;
+}
+header h1 {
+  color: white;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.titulo-container h1 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+#menu {
+  display: flex;
+  align-items: center;
+}
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+#menu li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#menu li a:hover {
+  color: #CD66FF;
+  text-shadow: 0 0 5px #470f77;
+}
+h1.page-title {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+.score {
+  font-size: 22px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+#resetBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px auto;
+  background-color: #8B5B9A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+}
+#resetBtn:hover {
+  background-color: #5a3e62;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.card {
+  width: 120px;
+  height: 216px;
+  position: relative;
+  cursor: pointer;
+  perspective: 800px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+}
+.card-front img, .card-back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.center-box {
+  width: 320px;
+  background-color: rgba(44, 13, 74, 0.9);
+  color: #F5E1FF;
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(44, 13, 74, 0.6);
+}
+.center-box button {
+  font-size: 20px;
+  background-color: #A259FF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+  margin-top: 24px;
+}
+.center-box button:hover {
+  background-color: #6c3cff;
+}
+
+.hidden {
+  display: none !important;
+}
+

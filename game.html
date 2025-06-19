@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="game.css" />
+    <script src="game.js" defer></script>
+    <title>Portifólio</title>
+</head>
+<body>
+    <div class="navbar">
+        <header  id="navbar">
+
+            <div class="logo-container">
+                <img class="logo" src="./img/logo.png" alt="Logo" />
+                <div class="titulo-container">
+                    <h1>PORTIFÓLIO</h1>
+                </div>
+            </div>
+        
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                    <li><a href="index.html#Project">Project</a></li>
+                    <li><a href="index.html#Skill">Skill</a></li>
+                    <li><a href="game.html">Game</a></li>
+                </ul>
+            </nav>
+        </header>
+
+       
+        <h1 class="page-title">Jogo da Memória</h1>
+  <div class="score">Pontos: <span id="score">0</span></div>
+
+  <div id="startScreen" class="center-box">
+    <div>Jogo da Memória</div>
+    <button id="startBtn">Iniciar Jogo</button>
+  </div>
+
+  <div id="gameContainer" class="hidden">
+    <div class="game-board" id="gameBoard"></div>
+    <button id="resetBtn">🔁 Reiniciar Jogo</button>
+  </div>
+
+  <div id="winScreen" class="center-box hidden">
+    <div>Parabéns! Você acertou todos os pares.</div>
+    <button id="playAgainBtn">Jogar Novamente</button>
+  </div>
+
+        
+    </div>
+
+ 
+    
+</body>
+</html>
